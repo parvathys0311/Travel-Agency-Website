@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- common header for all pages -->
+        <section class="main-header">
+            <section class="logo-title">
+                <a href="#destination"><i class="fa fa-ravelry logo"></i></a>
+                <a href="#destination">
+                    <h2> Travel Experts</h2>
+                </a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a class="current" href="#login">Login</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+
+        <section class="register">
+            <form action="" method="POST">
+                <ul class="ul_flexbox">
+                    <li>
+                        <label for="username"> Full Name </label>
+                        <input type="text" name="name" id="username"> 
+                    </li>
+                    <li>
+                        <label for="emailaddr"> Email </label>
+                        <input type="text" name="email" id="emailaddr"> 
+                    </li>
+                    <li>
+                        <label id="pwd"> Password </label>
+                        <input type="text" name="password" id="pwd"> 
+                    </li>
+                    <li>
+                        <label id="conf_pwd"> Confirm Password </label>
+                        <input type="text" name="password-confirm" id="conf_pwd"> 
+                    </li>
+                    <div class="subscribe">
+                        <label class="subscribe-label" id="suscribe_news"> Subscribe to our newsletter</label>
+                        <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news"> 
+                    </div>
+                    <li>
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
