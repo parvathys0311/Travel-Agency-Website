@@ -26,7 +26,7 @@ p {
 h1,
 h2,
 h3,
-h4, nav a {
+h4, nav a, button {
     margin: 0;
 
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -42,7 +42,6 @@ header {
     display: flex; 
     flex-direction: column;
 
-    height: 80vh;
     margin: 0;
 
     background-color: whitesmoke;
@@ -50,6 +49,7 @@ header {
     
 }
 
+/* main-header ---> 1st flex item of flexbox "header" */
 .main-header {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ header {
     margin: 0;
 }
 
-/* outer flex item */
+/* logo-title ---> 1st flex item of flexbox "main-header"  */
 .logo-title {
     margin:0; 
 
@@ -70,13 +70,13 @@ header {
 
 }
 
-/* inner flex item - logo */
+/* logo ---> 1st flex item of flexbox "logo-title"  */
 .logo {
     font-size: 40px;
     color: purple;
 }
 
-/* inner flex-item - Title */
+/* logo-title ---> 2nd flex item of flexbox "logo-title"  */
 .logo-title a{
     font-size: 21px;
     color: black;
@@ -85,7 +85,7 @@ header {
     
 }
 
-/* outer flex item - nav  */
+/* nav ---> 2nd flex item of flexbox "main-header"  */
 nav ul{
     margin:0; 
     display:flex;
@@ -97,8 +97,7 @@ nav ul{
     align-items: center;
 }
 
-/* inner flex item - navbar items */
-
+/* nav  li ---> flex items of flexbox "nav ul"  */
 nav li{
     padding:0.5em;
     /* flex-basis: 100%; */
@@ -116,9 +115,65 @@ nav a{
     text-align: center;
 }
 
+nav a:hover {
+    background-image: linear-gradient(white, purple);
+}
+
+nav a:active {
+    border: 1px solid black;
+}
+
+.current {
+    background-color: #f7dfdf;
+}
+
+/* hero-section ---> 2nd flex item of flexbox "header" */
 .hero-section {
     height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+
     background-image: url('https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     background-position: center;
+}
+
+.hero-section h1{
+    flex-wrap: wrap;
+
+    color: white;
+    font-size: 80px;
+
+}
+
+.hero-section p{
+    flex-wrap: wrap;
+
+    color: white;
+    font-size: 20px;
+}
+
+.hero-section button {
+    /* flex-wrap: wrap;
+    flex-basis: 100%; */
+
+    background: linear-gradient(45deg, white 10%, yellow 90%);
+    border: 1px solid greenyellow; 
+    border-radius: 10px;                
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: black;
+    
+    font-size: 22px; 
+    
+    padding: 0.5em 1em;
+    
 }
