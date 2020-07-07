@@ -37,36 +37,46 @@
     <main>
 
         <section class="register">
+            <p>Let's explore the world together. Join the Tribe !! <p>
             <form action="" method="POST">
-                <ul class="ul_flexbox">
-                    <li>
-                        <label for="username"> Full Name </label>
-                        <input type="text" name="name" id="username"> 
-                    </li>
-                    <li>
-                        <label for="emailaddr"> Email </label>
-                        <input type="text" name="email" id="emailaddr"> 
-                    </li>
-                    <li>
-                        <label id="pwd"> Password </label>
-                        <input type="text" name="password" id="pwd"> 
-                    </li>
-                    <li>
-                        <label id="conf_pwd"> Confirm Password </label>
-                        <input type="text" name="password-confirm" id="conf_pwd"> 
-                    </li>
-                    <div class="subscribe">
-                        <label class="subscribe-label" id="suscribe_news"> Subscribe to our newsletter</label>
-                        <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news"> 
-                    </div>
-                    <li>
-                        <button type="submit">Submit</button>
-                    </li>
-                </ul>
+                <fieldset>
+                    <legend>Please register</legend>
+                    <ul>
+                        <li>
+                            <label for="first-username"> First Name </label>
+                            <input type="text" name="firstname" id="first-username">
+                        </li>
+                        <li>
+                            <label for="last-username"> Last Name </label>
+                            <input type="text" name="lastname" id="last-username">
+                        </li>
+                        <li>
+                            <label for="emailaddr"> Email </label>
+                            <input type="text" name="email" id="emailaddr">
+                        </li>
+                        <li>
+                            <label id="pwd"> Password </label>
+                            <input type="text" name="password" id="pwd">
+                        </li>
+                        <li>
+                            <label id="conf_pwd"> Confirm Password </label>
+                            <input type="text" name="password-confirm" id="conf_pwd">
+                        </li>
+                        <div class="subscribe">
+                            <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news">
+                            <label class="subscribe-label" id="suscribe_news"> Subscribe to our newsletter</label>
+                        </div>
+                        <li>
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </fieldset>
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        &copy 2020 - Parvathy Sudhakaran
+    </footer>
 </body>
 
 </html>

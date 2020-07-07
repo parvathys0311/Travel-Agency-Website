@@ -18,9 +18,11 @@ main {
     margin: auto;
 }
 
-p, .contact_form label {
+p, .contact_form label, fieldset {
     font-family: 'Karla', sans-serif;
     font-family: 'Roboto Slab', serif;
+
+    line-height: 1.7;
 }
 
 h1,
@@ -44,9 +46,26 @@ header {
 
     margin: 0;
 
-    background-color: whitesmoke;
+    background-color: rgb(235, 213, 235);
     
     
+}
+
+footer{
+	padding: 1em;
+	
+	text-align: center;
+    font-variant: small-caps;
+    
+    /* position: fixed; */
+    height: 50px;
+    background-color: rgb(235, 213, 235);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 1em;
+	
 }
 
 /* main-header ---> 1st flex item of flexbox "header" */
@@ -66,7 +85,7 @@ header {
     display:flex;
     flex-basis: 50%;
     flex:auto;
-    padding: 1em;
+    padding: 0.5em;
 
 }
 
@@ -92,7 +111,7 @@ nav ul{
     flex-wrap: wrap;
     flex: auto;
     flex-basis:50%;
-    padding: 1em;
+    padding: 0.5em;
     justify-content: end;
     align-items: center;
 }
@@ -129,7 +148,7 @@ nav a:active {
 
 /* hero-section ---> 2nd flex item of flexbox "header" */
 .hero-section {
-    height: 80vh;
+    height: 70vh;
 
     display: flex;
     flex-direction: column;
@@ -177,6 +196,22 @@ nav a:active {
     padding: 0.5em 1em;
     
 }
+
+/* Gallery */
+.gallery {
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    /* border-bottom: solid grey 1px; */
+    padding: 5px;
+}
+
+.gallery img {
+    margin-top: 5em;
+    width: 800px;
+}
+
 /* Contact Us */
 
 .contact {
@@ -184,8 +219,9 @@ nav a:active {
 
     box-sizing: border-box;
     width: 100%;
-    border-bottom: solid grey 1px;
+    /* border-bottom: solid grey 1px; */
     padding: 5px;
+    margin-bottom: 5em;
 }
 
 .contact h2{
@@ -219,7 +255,6 @@ nav a:active {
     margin: 0;
 
     font-size: 14px;
-    line-height: 25px;
 
     text-align: left;
 }
@@ -274,22 +309,55 @@ nav a:active {
 /* register --> outer flex */
 
 .register {
-    margin-top:25%;
-    border: 1px solid grey;
+    margin-top:10%;
+    padding: 1em;
+    padding-bottom: 4em;
+    
+    text-align: center;
+    
+    /* background-color: rgb(245, 239, 245); */
+    /* border: 1px solid rebeccapurple;  */
 }
 
+.register p {
+    font-size: 25px;
+    font-weight: bold;
+
+    color: rgb(134, 28, 134);
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 3em;
+    width: 600px;
+
+    /* margin:0; */
+    /* padding:0; */
+    text-align: center;
+    
+}
 
 .register ul {
     max-width: 500px;
     margin: auto;
+
+    display:flex;
+    flex-direction: column;
+
+    text-align: left;
     
 }
 
 .register li {
-    margin: 1em;
+    margin-top: 0.75em;
     display: flex;
     flex: wrap;
     align-items: center;
+}
+
+.flexitem-subheading {
+    margin-top: 1.5em;
+    justify-content: center;
 }
 
 .register input {
