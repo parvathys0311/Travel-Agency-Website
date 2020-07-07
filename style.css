@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-nav ul {
+nav ul, .login ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -310,7 +310,7 @@ nav a:active {
 
 /* register --> outer flex */
 
-.register {
+.register, .login {
     margin-top:10%;
     padding: 1em;
     padding-bottom: 4em;
@@ -321,7 +321,7 @@ nav a:active {
     /* border: 1px solid rebeccapurple;  */
 }
 
-.register p {
+.register p, .login p {
     font-size: 25px;
     font-weight: bold;
 
@@ -332,12 +332,8 @@ fieldset {
     margin: auto;
     margin-top: 2em;
     display: inline-block;
-    /* width: 600px; */
-
-    /* margin:0; */
-    /* padding:0; */
+   
     text-align: center;
-    
 }
 
 .register ul {
@@ -401,3 +397,6 @@ fieldset {
 
     font-size: 20px;
 }
+
+/* login --- 3rd page styling */
+
