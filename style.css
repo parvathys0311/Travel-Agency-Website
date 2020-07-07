@@ -57,9 +57,11 @@ footer{
 	text-align: center;
     font-variant: small-caps;
     
-    /* position: fixed; */
-    height: 50px;
     background-color: rgb(235, 213, 235);
+    
+    position: fixed;
+    height: 50px;
+    
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -277,7 +279,7 @@ nav a:active {
 }
 
 
-.contact_form label, input, textarea {
+.contact_form label,.contact_form input,.contact_form textarea {
     flex: 1 0 120px;
     text-align: left;
     margin: 5px;
@@ -328,8 +330,9 @@ nav a:active {
 
 fieldset {
     margin: auto;
-    margin-top: 3em;
-    width: 600px;
+    margin-top: 2em;
+    display: inline-block;
+    /* width: 600px; */
 
     /* margin:0; */
     /* padding:0; */
@@ -338,8 +341,9 @@ fieldset {
 }
 
 .register ul {
-    max-width: 500px;
+    /* max-width: 400px; */
     margin: auto;
+    padding: 2em;
 
     display:flex;
     flex-direction: column;
@@ -361,27 +365,35 @@ fieldset {
 }
 
 .register input {
-    flex: 1;
+    flex: 1 0 120 px;
     background: transparent;
 }
 .register label{
     flex: 1;
+    margin-right: 50px;
 }
 
 .subscribe {
+    flex: 1;
     text-align: center;
     margin-top: 3em;
 }
 
 .subscribe label{
-    margin-right: 1em;
+    flex: 1 0 120 px;
+    /* margin-left: 1em; */
+    justify-content: center;
+}
+.subscribe input {
+    margin-right: 0.5em;
 }
 
 .register button {
     margin-top: 20px;
-    margin-left: 9em;
+    /* margin-left: 9em; */
+    flex:auto;
     
-    padding: 0.5em 2em;
+    padding: 0.5em 2em; 
 
     background: linear-gradient(grey, yellow);
     border: 1px solid grey; 
