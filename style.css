@@ -166,6 +166,7 @@ nav a:active {
 }
 
 .hero-section h1{
+    padding-top: 3em;
     flex-wrap: wrap;
 
     color: white;
