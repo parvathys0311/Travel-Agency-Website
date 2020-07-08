@@ -146,25 +146,26 @@ nav a:active {
 
     /* box-sizing: border-box; */
     /* width: 100%; */
-    /* border-bottom: solid grey 1px; */
+    
     padding: 5px;
 }
 
 .gallery-flexbox {
     margin:auto;
-    /* width: 700px; */
-    display:flex;
-    /* flex:auto; */
-    justify-content: space-between;
+    height:400px;
+    border: solid grey 1px;
+    /* display:flex; 
+    flex:auto; 
+    justify-content: space-between; */
 }
 
-.gallery-flexbox img{
+/* .gallery-flexbox img{
     margin-top: 2em;
     height:300px;
     flex:auto;
 
     border: 1px solid black;
-}
+} */ 
 
 
 /* ----- Contact Us ------ */
