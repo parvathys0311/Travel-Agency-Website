@@ -171,7 +171,7 @@ nav a:active {
 /* ----- Contact Us ------ */
 
 .contact {
-    text-align: center;
+    /* text-align: center; */
 
     box-sizing: border-box;
     /* width: 100%; */
@@ -203,15 +203,29 @@ nav a:active {
 }
 
 .contact_form {
-    /* display:flex; */
+    display:flex;
+    
+    flex-direction: column;
     margin-right: 15em ;
+    margin-top:2em;
+
 }
 
-/* .contact_form p{
-    justify-content: flex-end;
-} */
+.contact_form p{
+    /* flex:auto; */
+    text-align: center;
+}
 
-.contact_form ul,
+.contact_form form{
+    margin: 0;
+    padding: 0;
+
+    flex:auto;
+    display: inline-block;
+
+    justify-content: left;
+}
+
 .contact_address ul {
     margin: 0;
     padding: 10px;
@@ -219,27 +233,34 @@ nav a:active {
     list-style-type: none;
 }
 
+
 /* Contact Us - form */
 
 .contact_form ul{
+    margin:0;
+    padding:0;
+
     margin-top: 25px;
-    padding-left:5em;
+    
+    flex:auto;
 
     display: flex;
     flex-direction:column;
 
     align-items: flex-start;
+
+    list-style-type: none;
 }
 
 .contact_form li {
     display:flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
 }
 
 .contact_form label,.contact_form input,.contact_form textarea {
     flex: 1 0 120px;
     text-align: left;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .contact_form button {
