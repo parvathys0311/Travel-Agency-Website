@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="typography.css">
 
 </head>
 
@@ -19,17 +22,17 @@
         <!-- common header for all pages -->
         <section class="main-header">
             <section class="logo-title">
-                <a href="#destination"><i class="fa fa-ravelry logo"></i></a>
-                <a href="#destination">
+                <a href="index.html"><i class="fa fa-ravelry logo"></i></a>
+                <a href="index.html">
                     <h2> Travel Experts</h2>
                 </a>
             </section>
             <nav>
                 <ul>
-                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="#gallery">Destinations</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li><a class="current" href="#login">Login</a></li>
-                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a class="current" href="login.html">Login</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
                 </ul>
             </nav>
         </section>
@@ -42,12 +45,12 @@
                     <legend>Please Login</legend>
                     <ul>
                         <li>
-                            <label for="emailaddr"> Email </label>
-                            <input type="email" name="email" id="emailaddr">
+                            <label for="emailaddr"> Email* </label>
+                            <input type="email" name="email" id="emailaddr" required>
                         </li>
                         <li>
-                            <label id="pwd"> Password </label>
-                            <input type="password" name="password" id="pwd">
+                            <label for="pwd"> Password* </label>
+                            <input type="password" name="password" id="pwd" required>
                         </li>
                         <li>
                             <button type="submit">Continue</button>

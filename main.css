@@ -268,7 +268,7 @@ fieldset {
     text-align: center;
 }
 
-.register ul {
+.register ul, .login ul {
     /* max-width: 400px; */
     margin: auto;
     padding: 2em;
@@ -280,23 +280,23 @@ fieldset {
     
 }
 
-.register li {
+.register li, .login li {
     margin-top: 0.75em;
     display: flex;
     flex: wrap;
     align-items: center;
 }
 
-.flexitem-subheading {
+/* .flexitem-subheading {
     margin-top: 1.5em;
     justify-content: center;
-}
+} */
 
-.register input {
+.register input, .login input {
     flex: 1 0 120 px;
     background: transparent;
 }
-.register label{
+.register label, .login label{
     flex: 1;
     margin-right: 50px;
 }
@@ -316,7 +316,7 @@ fieldset {
     margin-right: 0.5em;
 }
 
-.register button {
+.register button, .login button {
     margin-top: 20px;
     /* margin-left: 9em; */
     flex:auto;
