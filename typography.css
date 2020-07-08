@@ -14,6 +14,7 @@ h4, nav a, button {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-variant: small-caps;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 a {
@@ -28,20 +29,20 @@ footer{
 /* logo ---> 1st flex item of flexbox "logo-title"  */
 .logo {
     font-size: 40px;
-    color: purple;
+    color: #e191e1;
 }
 
 
 /* logo-title ---> 2nd flex item of flexbox "logo-title"  */
 .logo-title a{
     font-size: 21px;
-    color: white;
+    color: #ece6ee;
     font-weight: bold;
 }
 
 nav a{
     font-size: 21px;
-    color: black;
+    color: #ece6ee;
     
     padding: 0.5em;
     text-align: center;

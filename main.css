@@ -99,7 +99,7 @@ nav a:active {
 }
 
 .current {
-    color: purple;
+    color:#ff7eff;
 }
 
 
@@ -107,7 +107,7 @@ nav a:active {
 /*  2nd flex item of flexbox "header"  */ 
 
 .hero-section {
-    height: 70vh;
+    height: 80vh;
 
     /* define an inner flex for herosection contents */
     display: flex;
@@ -118,7 +118,7 @@ nav a:active {
     align-items: center;
 
 
-    background-image: url('https://www.itl.cat/pngfile/big/83-836047_world-beautiful-places-iphone-x-wallpaper-monaco.jpg'); 
+    background-image: url('https://images.pexels.com/photos/2131772/pexels-photo-2131772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); 
     background-size: cover;
     background-position: center;
 }
@@ -203,8 +203,13 @@ nav a:active {
 }
 
 .contact_form {
+    /* display:flex; */
     margin-right: 15em ;
 }
+
+/* .contact_form p{
+    justify-content: flex-end;
+} */
 
 .contact_form ul,
 .contact_address ul {
