@@ -260,8 +260,12 @@ nav a:active {
     justify-content: flex-start;
 }
 
+.contact_form li label {
+    text-align: center;
+}
+
 .contact_form label,.contact_form input,.contact_form textarea {
-    flex: 1 0 120px;
+    flex: 1 0 200px;
     text-align: left;
     /* margin: 5px; */
 }
