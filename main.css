@@ -188,7 +188,7 @@ nav a:active {
 .box_contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: rgb(233, 233, 233);
 }
 
@@ -208,6 +208,8 @@ nav a:active {
     flex-direction: column;
     margin-right: 15em ;
     margin-top:2em;
+
+    width: 50vh;
 
 }
 
@@ -254,6 +256,7 @@ nav a:active {
 
 .contact_form li {
     display:flex;
+    flex:auto;
     justify-content: flex-start;
 }
 
