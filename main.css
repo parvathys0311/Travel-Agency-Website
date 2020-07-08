@@ -183,12 +183,15 @@ nav a:active {
 
 .contact h2{
     margin: 1em;
+    text-align: center;
 }
 
 .box_contact {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    
+    padding: 5em;
+
     background-color: rgb(233, 233, 233);
 }
 
@@ -207,7 +210,7 @@ nav a:active {
     
     flex-direction: column;
     margin-right: 15em ;
-    margin-top:2em;
+    margin-top:3em;
 
     width: 50vh;
 
@@ -219,11 +222,11 @@ nav a:active {
 }
 
 .contact_form form{
-    margin: 0;
+    margin: auto;
     padding: 0;
 
-    flex:auto;
-    display: inline-block;
+    /* flex:auto; */
+    /* display: inline-block; */
 
     justify-content: left;
 }
@@ -292,9 +295,12 @@ nav a:active {
     /* border: 1px solid rebeccapurple;  */
 }
 
+.fieldset_contact {
+    display: inline-block;
+    width:340px;
+}
 
-
-fieldset {
+.fieldset_register, .fieldset_login {
     margin: auto;
     margin-top: 2em;
     display: inline-block;
