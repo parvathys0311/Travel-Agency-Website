@@ -1,0 +1,333 @@
+
+main {
+    max-width: 1300px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4, nav a, button, body, header, .main-header, .contact_address p {
+    margin: 0;
+}
+
+/* header is a flex with 2 items - main header & herosection */
+header {
+    display: flex; 
+    flex-direction: column; 
+
+    background-color: rgb(100, 16, 100);  
+}
+
+/* footer styling */
+footer{
+	padding: 1em;
+	
+    background-color: rgb(235, 213, 235);
+    
+    position: fixed;
+    height: 50px;
+    
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 1em;
+	
+}
+
+/* main-header ---> 1st flex item of flexbox "header" */
+/* main header ---> also define a inner flex with 2 items - logo-title & nav */
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo-title ---> 1st flex item of flexbox "main-header"  */
+
+.logo-title {
+    margin:0; 
+
+    /* define a inner flex with 2 flexitems - logo & title  */
+    display:flex;
+    flex-basis: 50%;
+    flex:auto;
+    padding: 0.5em;
+
+}
+
+/* logo-title ---> 2nd flex item of flexbox "logo-title"  */
+.logo-title a{
+    padding-left: 0.5em;
+    
+}
+
+/* nav ---> 2nd flex item of flexbox "main-header"  */
+ 
+nav ul{
+    margin:0;
+    
+    /* define an inner flex with li as flex items  */
+    display:flex;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-basis:50%;
+    padding: 0.5em;
+    justify-content: end;
+    align-items: center;
+}
+
+/* nav  li ---> flex items of flexbox "nav ul"  */
+nav li{
+    padding:0.5em;
+    /* flex-basis: 100%; */
+}
+
+nav a{
+    display: block;
+}
+
+/* <------------- nav hover & click styles --------> */
+nav a:hover {
+    background-image: linear-gradient(white, purple);
+}
+
+nav a:active {
+    border: 1px solid black;
+}
+
+.current {
+    color: purple;
+}
+
+
+/* <--------------- hero-section -------------------> */
+/*  2nd flex item of flexbox "header"  */ 
+
+.hero-section {
+    height: 70vh;
+
+    /* define an inner flex for herosection contents */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url('https://www.itl.cat/pngfile/big/83-836047_world-beautiful-places-iphone-x-wallpaper-monaco.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section button {
+    /* flex-wrap: wrap;
+    flex-basis: 100%; */
+
+    background: linear-gradient(45deg, white 10%, yellow 90%);
+    border: 1px solid greenyellow; 
+    border-radius: 10px;                
+}
+
+.hero-section a {
+    padding: 0.5em 1em;
+    
+}
+
+/* ------- Gallery styling ------- */
+
+.gallery {
+    margin-top: 2em;
+
+    text-align: center;
+
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+    /* border-bottom: solid grey 1px; */
+    padding: 5px;
+}
+
+.gallery-flexbox {
+    margin-top: 4em;
+    /* width: 700px; */
+    display:flex;
+    /* flex:auto; */
+    justify-content: space-between;
+}
+
+.gallery-flexbox img{
+    border: 1px solid black;
+}
+
+
+/* ----- Contact Us ------ */
+
+.contact {
+    text-align: center;
+
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* border-style: dotted;  */
+    padding: 5px;
+    margin-bottom: 5em;
+    
+}
+
+.contact h2{
+    margin: 1em;
+}
+
+.box_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.contact_address {
+    margin-top:1em;
+    margin-bottom: 1em;
+    border: solid grey 2px;
+    padding-left: 5px;
+    padding-right: 5em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.contact_form {
+    margin-right: 15em ;
+}
+
+.contact_form ul,
+.contact_address ul {
+    margin: 0;
+    padding: 10px;
+
+    list-style-type: none;
+}
+
+/* Contact Us - form */
+
+.contact_form ul{
+    margin-top: 25px;
+    padding-left:5em;
+
+    display: flex;
+    flex-direction:column;
+
+    align-items: flex-start;
+}
+
+.contact_form li {
+    display:flex;
+    /* justify-content: flex-start; */
+}
+
+.contact_form label,.contact_form input,.contact_form textarea {
+    flex: 1 0 120px;
+    text-align: left;
+    margin: 5px;
+}
+
+.contact_form button {
+    margin-top: 20px;
+    margin-left: 100px;
+    
+    padding: 0.5em 2em;
+    background: linear-gradient(grey, yellow);
+    border: 1px solid grey; 
+    border-radius: 10px; 
+}
+
+
+/*  <-------- styling for 2nd page - register.html ----> */
+
+/* register --> outer flex */
+
+.register, .login {
+    margin-top:10%;
+    padding: 1em;
+    padding-bottom: 4em;
+    
+    text-align: center;
+    
+    /* background-color: rgb(245, 239, 245); */
+    /* border: 1px solid rebeccapurple;  */
+}
+
+
+
+fieldset {
+    margin: auto;
+    margin-top: 2em;
+    display: inline-block;
+   
+    text-align: center;
+}
+
+.register ul {
+    /* max-width: 400px; */
+    margin: auto;
+    padding: 2em;
+
+    display:flex;
+    flex-direction: column;
+
+    text-align: left;
+    
+}
+
+.register li {
+    margin-top: 0.75em;
+    display: flex;
+    flex: wrap;
+    align-items: center;
+}
+
+.flexitem-subheading {
+    margin-top: 1.5em;
+    justify-content: center;
+}
+
+.register input {
+    flex: 1 0 120 px;
+    background: transparent;
+}
+.register label{
+    flex: 1;
+    margin-right: 50px;
+}
+
+.subscribe {
+    flex: 1;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.subscribe label{
+    flex: 1 0 120 px;
+    /* margin-left: 1em; */
+    justify-content: center;
+}
+.subscribe input {
+    margin-right: 0.5em;
+}
+
+.register button {
+    margin-top: 20px;
+    /* margin-left: 9em; */
+    flex:auto;
+    
+    padding: 0.5em 2em; 
+
+    background: linear-gradient(grey, yellow);
+    border: 1px solid grey; 
+    border-radius: 10px; 
+
+    font-size: 20px;
+}
+
+/* login --- 3rd page styling */
