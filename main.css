@@ -160,7 +160,7 @@ nav a:active {
 
 .gallery-flexbox img{
     margin-top: 2em;
-    
+    width:200px;
     flex:auto;
 
     border: 1px solid black;
