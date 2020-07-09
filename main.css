@@ -176,14 +176,10 @@ nav a:active {
 /* ----- Contact Us ------ */
 
 .contact {
-    /* text-align: center; */
+    margin-bottom: 5em;
+    padding: 5px;
 
     box-sizing: border-box;
-    /* width: 100%; */
-    /* border-style: dotted;  */
-    padding: 5px;
-    margin-bottom: 5em;
-    
 }
 
 .contact h2{
@@ -191,11 +187,11 @@ nav a:active {
     text-align: center;
 }
 
+ /* box_contact is a flex wrapping the contact address & contact form */
 .box_contact {
     display: flex;
     flex-wrap: wrap;
-    
-    /* padding: 5em; */
+    justify-content: space-around;
 
     background-color: rgb(233, 233, 233);
 }
@@ -212,17 +208,12 @@ nav a:active {
 
 .contact_form {
     display:flex;
-    
     flex-direction: column;
     /* margin-right: 15em ;
     margin:3em; */
-
-    width: 50vh;
-
 }
 
 .contact_form p{
-    /* flex:auto; */
     text-align: center;
 }
 
@@ -232,7 +223,6 @@ nav a:active {
 
     flex:auto;
     text-align: center;
-    /* display: inline-block; */
 
     justify-content: left;
 }
@@ -245,7 +235,7 @@ nav a:active {
 }
 
 
-/* Contact Us - form */
+/* Form - Contact us form - in index page */
 
 .contact_form ul{
     margin:0;
