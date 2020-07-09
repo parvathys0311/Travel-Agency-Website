@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="typography.css">
@@ -18,8 +17,11 @@
 </head>
 
 <body>
+    <!-- wrap the whole page inside page-container -->
     <div class="page-container">
+        <!-- wrap the content  inside content-container with the exception of footer -->
         <div class="content-container">
+            <!-- header section starts here -->
             <header>
                 <!-- common header for all pages -->
                 <div class="main-header">
@@ -29,6 +31,7 @@
                             <h2> Travel Experts</h2>
                         </a>
                     </div>
+                    <!-- navigation items-->
                     <nav>
                         <ul>
                             <li><a href="#gallery">Destinations</a></li>
@@ -41,10 +44,12 @@
             </header>
             <!--  main content starts here -->
             <main>
+                <!-- main content includes a registration form in the page center -->
                 <div class="register">
                     <p class="outerflex-item1">Let's explore the world together. Join the Tribe.
                     <p>
                     <form action="#" method="POST">
+                        <!-- form fields are within a fieldset -->
                         <fieldset class="fieldset_register">
                             <legend>Please register</legend>
                             <ul>
@@ -82,7 +87,6 @@
                 </div>
             </main>
         </div>
-
         <!-- footer section starts here -->
         <footer>
             &copy; 2020 - Parvathy Sudhakaran

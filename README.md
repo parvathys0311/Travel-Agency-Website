@@ -42,10 +42,10 @@ To build a responsive website for a travel agency with attention being given to 
     - All inputs are accessible with labels, legends & fieldset
 
 ### Issues encountered on the way & how it is being tackled
- - Herosection - The 3 flex items - h2, p and button - It is now placed centered. Initially intention was to place these flex items horizontally centered, but vertically at bottom, (ps:the hero-section image chosen was different from the one now). It worked fine in big screen, but in mobile view, as the writings are at the bottom, the p tag and button disappears. I was not able to fix it by tweaking css. Would this needs JS? Haven't didn't try JS for now, instead have changed the herosection picture and maintained the flex items centered horizontally & vertically
+ - Herosection - The 3 flex items - h2, p and button - It is now placed centered. Initially intention was to place these flex items horizontally centered, but vertically at bottom, (ps:the hero-section image chosen was different from the one now). It worked fine in big screen, but in mobile view, as the writings are at the bottom, the p tag and button disappears. I was not able to fix it by tweaking css. Would this needs JS? Haven't tried JS for now, instead have changed the herosection picture and maintained the flex items centered horizontally & vertically
 
  - Had issues with tweaking the width of the fieldset. 
-    - I changed it by using display: inline-block after some search in stack overflow 
+    - Changed it by using display: inline-block after some search in stack overflow 
 
  - Encountered issues with maintaining footer at bottom
    - Solved it by getting help from freecodecamp website
@@ -53,14 +53,14 @@ To build a responsive website for a travel agency with attention being given to 
 ### Atributes
 - Images from https://www.pexels.com/ 
 - Logo from https://fontawesome.com/
+- Static form service provider : https://formspree.io/
 - Css helps -
   - StackOverflow: 
     - https://stackoverflow.com/questions/2302495/is-there-any-way-to-have-a-fieldset-width-only-be-as-wide-as-the-controls-in-the 
   - Freecodecamp:
     - https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
-   
 - Syntax helps - https://developer.mozilla.org/en-US/
-- README pattern inspiration: https://github.com/cprg210/assignments/blob/master/assignment-1/README.md
+- Mentor: Tony Grimes, https://github.com/acidtone 
 
 
 
