@@ -238,6 +238,7 @@ nav a:active {
     display:flex;
     
     justify-content: flex-start; 
+    padding: 2px;
 }
 
 /* define the properties for form fields */
@@ -323,13 +324,12 @@ nav a:active {
 
 .subscribe label{
     flex: 1 0 120px;
-   
-    justify-content: center;
 }
 .subscribe input {
     margin-right: 0.5em;
 }
 
+/* styling for button in register & login page */
 .register button, .login button {
     margin-top: 20px;
     padding: 0.5em 2em; 

@@ -53,6 +53,7 @@ To build a responsive website for a travel agency with attention being given to 
 ### Atributes
 - Images from https://www.pexels.com/ 
 - Logo from https://fontawesome.com/
+- Fonts from https://fonts.google.com/ 
 - Static form service provider : https://formspree.io/
 - Css helps -
   - StackOverflow: 
