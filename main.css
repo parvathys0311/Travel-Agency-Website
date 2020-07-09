@@ -1,5 +1,6 @@
 
 main {
+    /* set the properties of main section */
     max-width: 1300px;
     margin: auto;
 }
@@ -19,6 +20,7 @@ header {
     background-color: rgb(100, 16, 100);  
 }
 
+/* fixing the footer at bottom of the page */
 .page-container {
     position: relative;
     min-height: 100vh;
@@ -28,11 +30,11 @@ header {
     padding-bottom: 3rem;  /* Footer height */
 }
 
-/* footer styling */
-footer{
+footer {
     /* fix footer to bottom */
     position: absolute;    
     bottom: 0;
+    
     width: 100%;
     height: 3rem;           /* Footer height */
 
@@ -42,7 +44,7 @@ footer{
 }
 
 /* main-header ---> 1st flex item of flexbox "header" */
-/* main header ---> also define a inner flex with 2 items - logo-title & nav */
+/* main header ---> is again a flex with 2 items - logo-title & nav */
 .main-header {
     display: flex;
     flex-wrap: wrap;
@@ -51,43 +53,37 @@ footer{
 }
 
 /* logo-title ---> 1st flex item of flexbox "main-header"  */
-
 .logo-title {
     margin:0; 
+    padding: 0.5em;
 
     /* define a inner flex with 2 flexitems - logo & title  */
     display:flex;
-    /* flex-basis: 50%; */
     flex:auto;
-    padding: 0.5em;
-
 }
 
 /* logo-title ---> 2nd flex item of flexbox "logo-title"  */
 .logo-title a{
     padding-left: 0.5em;
-    
 }
 
-/* nav ---> 2nd flex item of flexbox "main-header"  */
- 
+/* nav section ---> 2nd flex item of flexbox "main-header"  */
 nav ul{
     margin:0;
     
     /* define an inner flex with li as flex items  */
     display:flex;
     flex-wrap: wrap;
-    /* flex: auto;
-    flex-basis:50%; */
     padding: 0.5em; 
-    justify-content: end;
+
+    /* positioning ul */
+    justify-content: end; 
     align-items: center;
 }
 
 /* nav  li ---> flex items of flexbox "nav ul"  */
 nav li{
     padding:0.5em;
-    /* flex-basis: 100%; */
 }
 
 nav a{
@@ -109,30 +105,29 @@ nav a:active {
 
 
 /* <--------------- hero-section -------------------> */
-/*  2nd flex item of flexbox "header"  */ 
 
+/*  2nd flex item of flexbox "header"  */ 
 .hero-section {
+    /* set the height of herosection viewport */
     height: 80vh;
 
     /* define an inner flex for herosection contents */
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 
+    /* position herosection in the center */
     justify-content: center;
     align-items: center;
-
 
     background-image: url('https://images.pexels.com/photos/2131772/pexels-photo-2131772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); 
     background-size: cover;
     background-position: center;
 }
 
+/* default button style adopted */
 .button {
-    /* flex-wrap: wrap;
-    flex-basis: 100%; */
-
     background: linear-gradient(45deg, white 10%, yellow 90%);
+    
     border: 1px solid greenyellow; 
     border-radius: 8px;                
 }
@@ -146,32 +141,16 @@ nav a:active {
 
 .gallery {
     margin-top: 2em;
-
-    text-align: center;
-
-    /* box-sizing: border-box; */
-    /* width: 100%; */
-    
     padding: 5px;
+
+    text-align: center;   
 }
 
 .gallery-flexbox {
     margin:auto;
     height:400px;
     border: solid grey 1px;
-    /* display:flex; 
-    flex:auto; 
-    justify-content: space-between; */
 }
-
-/* .gallery-flexbox img{
-    margin-top: 2em;
-    height:300px;
-    flex:auto;
-
-    border: 1px solid black;
-} */ 
-
 
 /* ----- Contact Us ------ */
 
@@ -196,27 +175,38 @@ nav a:active {
     background-color: rgb(233, 233, 233);
 }
 
+/* contact_address - is a flex item */
 .contact_address {
     margin-top:1em;
     margin-bottom: 1em;
-    border: solid grey 2px;
+    
     padding-left: 5px;
     padding-right: 5em;
     padding-top: 5px;
     padding-bottom: 10px;
+
+    border: solid grey 2px;
 }
 
+.contact_address ul {
+    margin: 0;
+    padding: 10px;
+
+    list-style-type: none;
+}
+
+/* contact_form - is a flex item */
+/* contact form - is also an inner flex with form fields as flex items */
 .contact_form {
     display:flex;
     flex-direction: column;
-    /* margin-right: 15em ;
-    margin:3em; */
 }
 
 .contact_form p{
     text-align: center;
 }
 
+/* Form - a flex item - included in index page */
 .contact_form form{
     margin: 0;
     padding: 0;
@@ -227,76 +217,69 @@ nav a:active {
     justify-content: left;
 }
 
-.contact_address ul {
-    margin: 0;
-    padding: 10px;
-
-    list-style-type: none;
-}
-
-
-/* Form - Contact us form - in index page */
-
 .contact_form ul{
     margin:0;
-    padding:0;
-
     margin-top: 25px;
+    padding:0;
     
     flex:auto;
 
+    /* define as flex with li form fields as flex items */
     display: flex;
     flex-direction:column;
-
     align-items: flex-start;
-
-    list-style-type: none;
 }
 
+/* contact_form li is a flex item */
 .contact_form li {
-    display:flex;
     flex:auto;
-    justify-content: flex-start;
+    
+    /* define a flex with label & input as flex items */
+    display:flex;
+    
+    justify-content: flex-start; 
 }
 
-.contact_form label,.contact_form input,.contact_form textarea {
+/* define the properties for form fields */
+.contact_form label,
+.contact_form input,
+.contact_form textarea {
     flex: 1 0 120px;
     text-align: left;
-    /* margin: 5px; */
 }
 
+/* button styling for "Send" button inside contact us section */
 .contact_form button {
     margin-top: 20px;
     margin-left: 100px;
     
     padding: 0.5em 2em;
+
     background: linear-gradient(grey, yellow);
     border: 1px solid grey; 
     border-radius: 10px; 
 }
 
+/* form is enclosed in a fieldset */
 .fieldset_contact {
+    /* adjust the width of fieldset by setting as inline-block */
+
     display: inline-block;
     width:340px;    
 }
 
-/*  <-------- styling for 2nd page - register.html ----> */
+/*  <-------- styling for register & login page ----> */
 
-/* register --> outer flex */
-
+/* default settings for register & login page */
 .register, .login {
     margin-top:5%;
     padding: 1em;
     padding-bottom: 4em;
     
     text-align: center;
-    
-    /* background-color: rgb(245, 239, 245); */
-    /* border: 1px solid rebeccapurple;  */
 }
 
-
-
+/* fieldset properties of register & login forms */
 .fieldset_register, .fieldset_login {
     margin: auto;
     margin-top: 1em;
@@ -306,15 +289,13 @@ nav a:active {
 }
 
 .register ul, .login ul {
-    /* max-width: 400px; */
     margin: auto;
     padding: 2em;
 
     display:flex;
     flex-direction: column;
 
-    text-align: left;
-    
+    text-align: left;    
 }
 
 .register li, .login li {
@@ -323,11 +304,6 @@ nav a:active {
     flex-wrap: wrap;
     align-items: center;
 }
-
-/* .flexitem-subheading {
-    margin-top: 1.5em;
-    justify-content: center;
-} */
 
 .register input, .login input {
     flex: 1 0 120px;
@@ -339,15 +315,15 @@ nav a:active {
 }
 
 .subscribe {
-    flex: 1;
-    text-align: center;
-
     padding: 1em;
+    text-align: center; 
+
+    flex: 1;
 }
 
 .subscribe label{
     flex: 1 0 120px;
-    /* margin-left: 1em; */
+   
     justify-content: center;
 }
 .subscribe input {
@@ -356,11 +332,10 @@ nav a:active {
 
 .register button, .login button {
     margin-top: 20px;
-    /* margin-left: 9em; */
+    padding: 0.5em 2em; 
+    
     flex:auto;
     
-    padding: 0.5em 2em; 
-
     background: linear-gradient(grey, yellow);
     border: 1px solid grey; 
     border-radius: 10px; 
@@ -368,4 +343,3 @@ nav a:active {
     font-size: 20px;
 }
 
-/* login --- 3rd page styling */

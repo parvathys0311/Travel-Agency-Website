@@ -1,4 +1,5 @@
 
+/* ----- default font settings adopted ----- */
 
 p, .contact_form label, fieldset {
     font-family: 'Karla', sans-serif;
@@ -29,14 +30,11 @@ footer{
     font-variant: small-caps;
 }
 
-/* logo ---> 1st flex item of flexbox "logo-title"  */
 .logo {
     font-size: 40px;
     color: #e191e1;
 }
 
-
-/* logo-title ---> 2nd flex item of flexbox "logo-title"  */
 .logo-title a{
     font-size: 21px;
     color: #ece6ee;
