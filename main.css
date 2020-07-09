@@ -293,6 +293,8 @@ nav a:active {
     margin: auto;
     padding: 2em;
 
+    
+    /* ul is a flex with li as flex items */
     display:flex;
     flex-direction: column;
 
@@ -301,8 +303,11 @@ nav a:active {
 
 .register li, .login li {
     margin-top: 0.75em;
+
+    /* li is a flex with label & input as flex items */
     display: flex;
     flex-wrap: wrap;
+    
     align-items: center;
 }
 
@@ -322,9 +327,10 @@ nav a:active {
     flex: 1;
 }
 
-.subscribe label{
+.subscribe-label{
     flex: 1 0 120px;
 }
+
 .subscribe input {
     margin-right: 0.5em;
 }
