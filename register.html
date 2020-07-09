@@ -18,70 +18,76 @@
 </head>
 
 <body>
-    <header>
-        <!-- common header for all pages -->
-        <div class="main-header">
-            <div class="logo-title">
-                <a href="index.html"><i class="fa fa-ravelry logo"></i></a>
-                <a href="index.html">
-                    <h2> Travel Experts</h2>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#gallery">Destinations</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a class="current" href="login.html">Login</a></li>
-                    <li><a href="register.html">Sign Up</a></li>
-                </ul>
-            </nav>
+    <div class="page-container">
+        <div class="content-container">
+            <header>
+                <!-- common header for all pages -->
+                <div class="main-header">
+                    <div class="logo-title">
+                        <a href="index.html"><i class="fa fa-ravelry logo"></i></a>
+                        <a href="index.html">
+                            <h2> Travel Experts</h2>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#gallery">Destinations</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a class="current" href="login.html">Login</a></li>
+                            <li><a href="register.html">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--  main content starts here -->
+            <main>
+                <div class="register">
+                    <p class="outerflex-item1">Let's explore the world together. Join the Tribe.
+                    <p>
+                    <form action="#" method="POST">
+                        <fieldset class="fieldset_register">
+                            <legend>Please register</legend>
+                            <ul>
+                                <li>
+                                    <label for="first-username">First Name</label>
+                                    <input type="text" name="firstname" id="first-username" required>
+                                </li>
+                                <li>
+                                    <label for="last-username">Last Name</label>
+                                    <input type="text" name="lastname" id="last-username" required>
+                                </li>
+                                <li>
+                                    <label for="emailaddr">Email</label>
+                                    <input type="email" name="email" id="emailaddr" required>
+                                </li>
+                                <li>
+                                    <label for="pwd">Password</label>
+                                    <input type="password" name="password" id="pwd" required>
+                                </li>
+                                <li>
+                                    <label for="conf_pwd">Confirm Password</label>
+                                    <input type="password" name="password-confirm" id="conf_pwd" required>
+                                </li>
+                                <li class="subscribe">
+                                    <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news">
+                                    <label class="subscribe-label" for="suscribe_news">Subscribe to our
+                                        newsletter</label>
+                                </li>
+                                <li>
+                                    <button type="submit">Register</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
         </div>
-    </header>
-    <!--  main content starts here -->
-    <main>
-        <div class="register">
-            <p class="outerflex-item1">Let's explore the world together. Join the Tribe.<p>
-            <form action="#" method="POST">
-                <fieldset class="fieldset_register">
-                    <legend>Please register</legend>
-                    <ul>
-                        <li>
-                            <label for="first-username"> First Name *</label>
-                            <input type="text" name="firstname" id="first-username" required>
-                        </li>
-                        <li>
-                            <label for="last-username"> Last Name *</label>
-                            <input type="text" name="lastname" id="last-username" required>
-                        </li>
-                        <li>
-                            <label for="emailaddr"> Email *</label>
-                            <input type="email" name="email" id="emailaddr" required>
-                        </li>
-                        <li>
-                            <label for="pwd"> Password *</label>
-                            <input type="password" name="password" id="pwd" required>
-                        </li>
-                        <li>
-                            <label for="conf_pwd"> Confirm Password *</label>
-                            <input type="password" name="password-confirm" id="conf_pwd" required>
-                        </li>
-                        <div class="subscribe">
-                            <input class="subscribe-input" type="checkbox" name="subscribe" id="suscribe_news">
-                            <label class="subscribe-label" id="suscribe_news"> Subscribe to our newsletter</label>
-                        </div>
-                        <li>
-                            <button type="submit">Register</button>
-                        </li>
-                    </ul>
-                </fieldset>
-            </form>
-        </div>
-    </main>
 
-    <!-- footer section starts here -->
-    <footer>
-        & copy 2020 - Parvathy Sudhakaran
-    </footer>
+        <!-- footer section starts here -->
+        <footer>
+            &copy; 2020 - Parvathy Sudhakaran
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -19,21 +19,26 @@ header {
     background-color: rgb(100, 16, 100);  
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-container{
+    padding-bottom: 3rem;  /* Footer height */
+}
+
 /* footer styling */
 footer{
-	padding: 1em;
+    /* fix footer to bottom */
+    position: absolute;    
+    bottom: 0;
+    width: 100%;
+    height: 3rem;           /* Footer height */
+
+    padding: 1em;
 	
     background-color: rgb(235, 213, 235);
-    
-    position: fixed;
-    height: 50px;
-    
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    margin-top: 1em;
-	
 }
 
 /* main-header ---> 1st flex item of flexbox "header" */
@@ -123,13 +128,13 @@ nav a:active {
     background-position: center;
 }
 
-.hero-section button {
+.button {
     /* flex-wrap: wrap;
     flex-basis: 100%; */
 
     background: linear-gradient(45deg, white 10%, yellow 90%);
     border: 1px solid greenyellow; 
-    border-radius: 10px;                
+    border-radius: 8px;                
 }
 
 .hero-section a {
@@ -290,7 +295,7 @@ nav a:active {
 /* register --> outer flex */
 
 .register, .login {
-    margin-top:10%;
+    margin-top:5%;
     padding: 1em;
     padding-bottom: 4em;
     
@@ -304,7 +309,7 @@ nav a:active {
 
 .fieldset_register, .fieldset_login {
     margin: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     display: inline-block;
    
     text-align: center;
@@ -325,7 +330,7 @@ nav a:active {
 .register li, .login li {
     margin-top: 0.75em;
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -335,7 +340,7 @@ nav a:active {
 } */
 
 .register input, .login input {
-    flex: 1 0 120 px;
+    flex: 1 0 120px;
     background: transparent;
 }
 .register label, .login label{
@@ -346,11 +351,12 @@ nav a:active {
 .subscribe {
     flex: 1;
     text-align: center;
-    margin-top: 3em;
+
+    padding: 1em;
 }
 
 .subscribe label{
-    flex: 1 0 120 px;
+    flex: 1 0 120px;
     /* margin-left: 1em; */
     justify-content: center;
 }

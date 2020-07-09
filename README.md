@@ -1,9 +1,9 @@
 # Travel Experts
 
-Author: Parvathy Sudhakaran
-Submission Date: 09-07-2020
-Course Module: CPRG-210-XM1
-Assignment No : 1
+- Author: Parvathy Sudhakaran
+- Submission Date: 09-07-2020
+- Course Module: CPRG-210-XM1
+- Assignment No : 1
 
 ### Objective
 
@@ -48,7 +48,7 @@ To build a responsive website for a travel agency with attention being given to 
     - I changed it by using display: inline-block after some search in stack overflow 
 
  - Encountered issues with maintaining footer at bottom
-   - Solved it by getting help from website - 
+   - Solved it by getting help from freecodecamp website
    
 ### Atributes
 - Images from https://www.pexels.com/ 
@@ -56,8 +56,11 @@ To build a responsive website for a travel agency with attention being given to 
 - Css helps -
   - StackOverflow: 
     - https://stackoverflow.com/questions/2302495/is-there-any-way-to-have-a-fieldset-width-only-be-as-wide-as-the-controls-in-the 
+  - Freecodecamp:
+    - https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
    
 - Syntax helps - https://developer.mozilla.org/en-US/
+- README pattern inspiration: https://github.com/cprg210/assignments/blob/master/assignment-1/README.md
 
 
 
